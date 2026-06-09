@@ -1,0 +1,36 @@
+# Agent Airlock example policy.
+#
+# This is the declarative software gate evaluated BEFORE any intent reaches the
+# Ledger device. The agent-demo references the recipient below so its first
+# scenario is allowed and its attacker scenario is blocked.
+
+# Per-transaction ceiling: 0.05 ETH.
+max_value_wei: "50000000000000000"
+
+# Cumulative ceiling across one UTC day: 0.1 ETH.
+daily_cap_wei: "100000000000000000"
+
+# Plain value transfers may only go to these addresses.
+allowed_recipients:
+  - "0x1111111111111111111111111111111111111111"
+  - "0x2222222222222222222222222222222222222222"
+
+# Mainnet (1) and Sepolia testnet (11155111).
+allowed_chain_ids:
+  - 1
+  - 11155111
+
+# Contracts that intents carrying call data may target. Empty for now: this
+# policy permits value transfers only.
+allowed_contracts: []
+
+# At most 5 approved transactions per rolling minute.
+rate_per_minute: 5
+
+# Permitted hours in UTC, inclusive. 0-23 means always on.
+allowed_hours_utc:
+  start: 0
+  end: 23
+
+# Reject any value transfer whose recipient is not in allowed_recipients.
+require_recipient_allowlist: true

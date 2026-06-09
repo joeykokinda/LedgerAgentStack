@@ -1,0 +1,20 @@
+# build artifacts
+/bin/
+
+# node dependencies
+node_modules/
+
+# vendored Ledger repos cloned for research (large, re-clonable)
+/external/
+
+# downloaded Speculos app ELF (re-fetched by scripts/run-speculos.sh)
+/speculos-apps/*.elf
+
+# installed Ledger agent-skills (reinstall: npx skills add ledgerhq/agent-skills)
+/.agents/
+
+# proof render scratch (the PNGs it produces are committed)
+/proof/_*.html
+
+# python cache
+__pycache__/

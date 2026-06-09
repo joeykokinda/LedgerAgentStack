@@ -1,0 +1,23 @@
+{
+  "name": "signer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@ledgerhq/device-management-kit": "^1.5.1",
+    "@ledgerhq/device-signer-kit-ethereum": "^1.16.0",
+    "@ledgerhq/device-transport-kit-speculos": "^1.2.1",
+    "@ledgerhq/hw-app-eth": "^7.8.5",
+    "@ledgerhq/hw-transport-node-speculos": "^6.34.3",
+    "@ledgerhq/hw-transport-node-speculos-http": "^6.36.3",
+    "ethers": "^6.16.0",
+    "rxjs": "^7.8.2"
+  }
+}
