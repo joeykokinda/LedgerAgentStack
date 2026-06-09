@@ -1,0 +1,16 @@
+$ node signer/dmk-sign.js
+[dmk] discovered: Speculos - App Name - version
+[dmk] connected, session: 6fdd5aa5-f7cb-4a87-8c7a-16e27bb44771
+[dmk] getAddress -> {"publicKey":"04ef5b152e3f15eb0c50c9916161c2309e54bd87b9adce722d69716bcdef85f547678e15ab40a78919c7284e67a17ee9a96e8b9886b60f767d93023bac8dbc16e4","address":"0xDad77910DbDFdE764fC21FCD4E74D71bBACA6D8D"}
+[dmk] captured 04-dmk-sign.png
+[dmk] signature -> {"v":0,"r":"0x19f28f900b282f7211a565e0d304eccfb376b62f91512bfc35270f5c034a59e2","s":"0x0b6075adaf904251135fefaa126a793f12fe04d4a16278375d664a5ba98f3ef5"} approved at: Sign transaction
+
+{
+  "method": "DMK",
+  "transport": "SPECULOS_HTTP_TRANSPORT",
+  "address": "0xDad77910DbDFdE764fC21FCD4E74D71bBACA6D8D",
+  "signedTx": "0x02f87583aa36a7078459682f008506fc23ac00825208941111111111111111111111111111111111111111876a94d74f43000080c080a019f28f900b282f7211a565e0d304eccfb376b62f91512bfc35270f5c034a59e2a00b6075adaf904251135fefaa126a793f12fe04d4a16278375d664a5ba98f3ef5",
+  "from": "0xDad77910DbDFdE764fC21FCD4E74D71bBACA6D8D",
+  "txHash": "0x9982872c04bf253a83aa1c147b2874879adff4316732c67db904188f32cef438",
+  "signedViaDMK": true
+}
